@@ -13,6 +13,7 @@ Then the file the json file is opened to get the characteristics of each propert
 
 
 ## Visuals
+![run result](/real-estate-price-prediction/assets/image1.png?raw=true "result of the program")
 
 ## Contributors
 Amanuel Zeredawit
