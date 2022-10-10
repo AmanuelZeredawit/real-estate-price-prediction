@@ -17,28 +17,29 @@ import flatdict
 driver = webdriver.Chrome(r"C:\Users\32467\OneDrive\Documents\Arai4_Projects\real-estate-price-prediction\data_acquisition\chromedriver.exe")
 
 
-# optimize the selenium
-options = webdriver.ChromeOptions()
-options.add_experimental_option('excludeSwitches', ['enable-logging'])
-#options.add_argument("--headless") 
-options.add_argument("--disable-infobars")
-options.add_argument("--disable-extensions")
-options.add_argument("--disable-gpu")
-prefs = {"profile.managed_default_content_settings.images":2,
-         "profile.default_content_setting_values.notifications":2,
-         "profile.managed_default_content_settings.stylesheets":2,
-         "profile.managed_default_content_settings.cookies":2,
-         "profile.managed_default_content_settings.javascript":1,
-         "profile.managed_default_content_settings.plugins":1,
-         "profile.managed_default_content_settings.popups":2,
-         "profile.managed_default_content_settings.geolocation":2,
-         "profile.managed_default_content_settings.media_stream":2,
-}
-options.add_experimental_option("prefs",prefs)
+# # optimize the selenium
+# options = webdriver.ChromeOptions()
+# options.add_experimental_option('excludeSwitches', ['enable-logging'])
+# #options.add_argument("--headless") 
+# options.add_argument("--disable-infobars")
+# options.add_argument("--disable-extensions")
+# options.add_argument("--disable-gpu")
+# prefs = {"profile.managed_default_content_settings.images":2,
+#          "profile.default_content_setting_values.notifications":2,
+        
+#          "profile.managed_default_content_settings.stylesheets":2,
+#          "profile.managed_default_content_settings.cookies":2,
+#          "profile.managed_default_content_settings.javascript":1,
+#          "profile.managed_default_content_settings.plugins":1,
+#          "profile.managed_default_content_settings.popups":2,
+#          "profile.managed_default_content_settings.geolocation":2,
+#          "profile.managed_default_content_settings.media_stream":2,
+# }
+# options.add_experimental_option("prefs",prefs)
 
-# Configure Selenium browser
-driver = webdriver.Chrome(options=options)
-driver.minimize_window()
+# # Configure Selenium browser
+# driver = webdriver.Chrome(options=options)
+# driver.minimize_window()
 # set the url variables
 root_url = "https://www.immoweb.be/en"
 apartments_url = "https://www.immoweb.be/en/search/apartment/for-sale?countries=BE"
@@ -123,7 +124,7 @@ def save_pages_urls():
     property_types_urls = [apartments_url,house_url]
     # set a dictionary of type of property with the number of pages             
     #page_number_of_types = {apartments_url:333, house_url:333, new_real_estate_apartment_url:71,new_real_estate_house_url:32}
-    page_number_of_types = {apartments_url:332, house_url:332}
+    page_number_of_types = {apartments_url:5, house_url:5}
 
     # open a json file to save the lists of properties urls
     with open('property_page_urls.json', 'w') as fp:
