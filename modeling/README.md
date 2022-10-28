@@ -1,7 +1,7 @@
 # Description
 In this part of the project the data is further preprocessed, and some features are enginered. then data is seperated into train and test sets. different models was tried
 and random forest regression is selected. Two seperate models are created one for house 
-type property and the other for apartment. The test score of the apartment model is 73.6%
+type property and the other for apartment. The test score of the apartment model is 72.8%
 and that of house is 59%. 
 
 
@@ -28,4 +28,5 @@ Then you will need to select a model, train, test and evaluate it on your datase
  - model is created 
  - model is trained and evaluated
  
+
 
