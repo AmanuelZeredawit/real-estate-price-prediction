@@ -1,28 +1,6 @@
 # real-estate-price-prediction
 ## Description
 This project is built for  real estate company to predict the price of real estate sales in Belgium. first raw data is scraped from the web.And then it is cleaned and processed to create a model.
-### Project structure
-$ tree
-.
-├── data_acquisation
-│   ├── web_scrapper.py
-│   └── README.md
-├── data_analysis 
-│   ├── data
-│   ├── immo_eliza.ipynp
-│   └── README.md
-├── modeling
-│   ├── model.ipynb
-│   └── README.md
-├── deployment
-    ├── model
-    ├── templates
-    |── app.py
-    ├── docekerfile
-    └── README.md  
-|
-└── README.md
-
 
 ## Installation
 To deploy and use the project first clone it and use the deployment
