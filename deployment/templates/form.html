@@ -1,0 +1,76 @@
+<form action="/predict" method = "POST">
+    <p><label>Type</label>
+        <select name="Type">
+            <option value="HOUSE">House</option>
+            <option value="APARTMENT">Apartment</option>
+        </select>
+    </p>
+    <p><label>Sub Type</label>
+    <select name="SubType">
+        'SERVICE_FLAT'
+        <option value="SERVICE_FLAT">service flat</option>
+        <option value="PAVILION">Pavilion</option>
+        <option value="KOT">Kot</option>
+        <option value="HOUSE">House</option>
+        <option value="TOWN_HOUSE">Town house</option>
+        <option value="VILLA">Villa</option>
+        <option value="MANSION">Manison</option>
+        <option value="APARTMENT_BLOCK">Apartment Block</option>
+        <option value="EXCEPTIONAL_PROPERTY">Exceptional property</option>
+        <option value="FARMHOUSE">Farm house</option>
+        <option value="BUNGALOW">Bungalow</option>
+        <option value="CHALET">chalet</option>
+        <option value="MANOR_HOUSE">Manor house</option>
+        <option value="COUNTRY_COTTAGE"> Country cottage</option>
+        <option value="MIXED_USE_BUILDING">Mixed use building</option>
+      </select>
+    </p>
+    <p>NetHabitableSurface(msq) <input type = "number" name = "NetHabitableSurface(msq)" min = "25" /></p>
+    <p>BedroomCount <input type = "number" name = "BedroomCount" min ="0" /></p>
+    <p><label>Province</label>
+        <select name="Province"> 
+            <option value="Limburg">Limburg</option>
+            <option value="Antwerp">Antwerp</option>
+            <option value="East Flanders">East Flanders</option>
+            <option value="Namur">Namur</option>
+            <option value="Liège">Liège</option>
+            <option value="Hainaut">Hainaut</option>
+            <option value="Flemish Brabant">Flemish Brabant</option>
+            <option value="West Flanders">West Flanders</option>
+            <option value="Walloon Brabant">Walloon Brabant</option>
+            <option value="Luxembourg">Luxembourg</option>
+            <option value="Brussels"> Brussels</option>
+          </select>
+        </p>
+    
+        
+    <p><label>Region</label>
+        <select name="Region"> 
+            <option value="Flanders">Flanders</option>
+            <option value="Wallonie">Wallonie</option>
+            <option value="Brussels">Brussels</option>
+        </select>
+    </p>
+
+    <p>PostCode <input type = "text" name = "PostCode" pattern= "[1-9]{1}[0-9]{3}" placeholder="1234"/></p>
+    <p>FacadeCount <input type = "number" name = "FacadeCount" pattern="\d+" min ="0" max ="6"/></p>
+    <p><label>Kitchen Type</label>
+        <select name="KitchenType"> 
+            <option value= 0>Not installed</option>
+            <option value= 0>USA uninstalled</option>
+            <option value= 1>USA installed</option>
+            <option value= 1>Installed</option>
+            <option value= 2>Semi equipped</option>
+            <option value= 2>USA semi equipped</option>
+            <option value= 3>Hyper equipped</option>
+            <option value= 3>USA hyper equipped</option>
+        </select>
+    </p>
+    <p><label>Status</label>
+        <select name="Status">
+            <option value="new">New</option>
+            <option value="old">Old</option>
+        </select>
+    </p>
+    <p><input type = "submit" value = "Submit" /></p>
+</form>
