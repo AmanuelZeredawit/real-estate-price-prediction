@@ -47,9 +47,11 @@ user has to put their property(house/apartment) characterstics in the form and
 and the model will predict the price of the property:
 
 
-assets/user_form.png
-assets/output_data.png
 ![user form ](assets/user_form.png)
+
+The output:
+
+
 ![output ](assets/output_data.png)
 
 
