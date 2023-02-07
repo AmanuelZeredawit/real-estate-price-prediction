@@ -1,0 +1,10 @@
+pandas
+scikit-learn
+matplotlib
+seaborn
+flask
+asyncore-wsgi
+beautifulsoup4
+flatdict
+selenium
+joblib
